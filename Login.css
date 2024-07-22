@@ -1,0 +1,143 @@
+.login{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    padding-top:100px;
+
+}
+.login-container{
+    width: 680px;
+    height: 500px;
+    /* background: rgb(255, 251, 0); */
+    margin: auto;
+    padding: 40px 60px;
+    border-radius: 30px;
+    border: 3px solid #ffff00;
+    
+}
+
+.login-container h1{
+    margin: 20px 20px;
+    font-weight: 600;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(255, 251, 0);  
+   
+}
+.login-fields{
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    margin-top: 30px;
+   
+}
+.login-fields input{
+    height: 72px;
+    width: 95%;
+    padding-left: 20px;
+    border: 2px solid #fff704;
+    outline: none;
+    color: rgb(229, 255, 0);
+    font-size: 18px;
+    border-radius: 30px;
+    background-color: transparent; 
+
+}
+.login-fields input:hover{
+    background: #ffff00;
+    opacity: 30%;
+}
+.btn{
+    text-align: center;
+}
+.btn button{
+    width: 175px;
+    height: 55px;
+    color: rgb(255, 225, 0);
+    background: transparent;
+    margin-top: 30px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 30px;
+    border: 1px solid rgb(255, 234, 45);
+    align-items: center;
+    
+}
+.btn button:hover{
+    background-color: rgb(255, 251, 0);
+    color: rgb(5, 5, 5);
+}
+.login-login{
+    margin-top: 20px;
+    color: rgb(251, 255, 0);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.login-login a{
+    color: rgb(0, 255, 255);
+    font-weight: 600;
+    cursor: pointer;
+}
+.back-video-login{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 120%; 
+    margin-top: -125px;
+    margin-bottom: 10px;
+}
+.page{
+    margin-top: 110px;
+}
+/* Media Queries for small screens */
+@media (max-width: 768px) {
+    .login {
+        padding-top: 50px; /* Reduce top padding */
+        background-color: black; /* Set background color to black */
+    }
+
+    .login-container {
+        width: 90%; /* Reduce width for better fit on small screens */
+        height: auto; /* Adjust height to fit content */
+        padding: 20px 30px; /* Reduce padding */
+        border-radius: 20px; /* Reduce border-radius */
+        border: 2px solid #ffff00; /* Adjust border thickness */
+        background-color: black; /* Ensure container background is black */
+    }
+
+    .login-container h1 {
+        font-size: 30px; /* Adjust font size for smaller screens */
+        margin: 10px; /* Reduce margin */
+    }
+
+    .login-fields {
+        gap: 20px; /* Reduce gap between fields */
+    }
+
+    .login-fields input {
+        height: 60px; /* Reduce input height */
+        font-size: 16px; /* Adjust font size */
+        padding-left: 15px; /* Reduce padding */
+    }
+
+    .btn button {
+        width: 150px; /* Reduce button width */
+        height: 45px; /* Reduce button height */
+        font-size: 16px; /* Adjust font size */
+        border-radius: 20px; /* Reduce border-radius */
+    }
+
+    .login-login {
+        font-size: 16px; /* Adjust font size */
+        margin-left: 5px; /* Reduce margin-left */
+    }
+
+    .login-login a {
+        font-size: 16px; /* Adjust font size */
+    }
+}
+
+
