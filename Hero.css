@@ -1,0 +1,177 @@
+/* .hero{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, rgb(0, 0, 0) , rgb(255, 255, 83)  60%);
+    display: flex;
+    
+
+}
+.hero-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 180px;
+    line-height: 1.1;
+}
+.hero-left h2{
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+}
+.hero-left p{
+    color: black;
+    font-size: 90px;
+    font-weight: 700;
+}
+.hero-hand-icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.hero-hand-icon img{
+    width: 100px;
+}
+.hero-latest-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 270px;
+    height: 50px;
+    border-radius: 75px;
+    margin-top: 30px;
+    background: rgb(0, 0, 0);
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.hero-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-right img{
+    width:680px;
+    height: 680px;
+} */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    text-align: center;
+}
+.content h1{
+    font-size: 100px;
+    -webkit-text-stroke: 2px yellow;
+    color: transparent;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.content h2{
+    font-size: 60px;
+    -webkit-text-stroke: 1px yellow;
+    color: transparent;
+    font-weight: 800;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.content h1:hover{
+    
+    color: yellow;
+}
+.content a{
+ text-decoration: none;
+ display: inline-block;
+ color: yellow;
+ font-size: 25px;
+ border: 2px solid yellow;
+ padding: 14px 50px;
+ border-radius: 50px;
+ margin-top: 20px;
+ cursor: pointer;
+ 
+}
+.content a:hover{
+    background: rgb(255, 238, 0);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+    
+}
+.back-video{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 120%; 
+    margin-top: 135px;
+    margin-bottom: 10px;
+}
+/* Existing CSS */
+
+/* Media Queries for small screens */
+@media (max-width: 768px) {
+    .hero {
+      /* padding: 0 2%; */
+      flex-direction: column;
+      justify-content: center;
+      height: 38vh;
+      margin-top: -23px;
+    }
+  
+    .content h1 {
+      font-size: 20px;
+      -webkit-text-stroke: 1px yellow;
+    }
+  
+    .content h2 {
+      font-size: 10px;
+      -webkit-text-stroke: 0.5px yellow;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  
+    .content a {
+      font-size: 10px;
+      padding: 10px 30px;
+      margin-top: 15px;
+    }
+  
+    .back-video {
+      height: 100%;
+      /* width:100%; */
+      margin-top: -25px;
+      
+    }
+  }
+  
+/* @media(min-aspect-ratio: 16/9){
+    .back-video{
+       width: 100%; 
+       height: auto; 
+    }
+}
+@media(max-aspect-ratio: 16/9){
+    .back-video{
+      width: auto;
+      height: 100%;
+    }
+} */

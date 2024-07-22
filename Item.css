@@ -1,0 +1,111 @@
+.item{
+    width: 350px;
+}
+.item p{
+    margin: 6px 40px;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+}
+.item-prices{
+    display: flex;
+    gap: 20px;
+}
+.item-price-new{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 600;
+    margin: 3px 45px;
+}
+.item-price-old{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: line-through;
+    margin: 3px 40px;
+}
+.item:hover{
+    transform: scale(1.05);
+    transition: 0.6s;
+}
+.item img{
+    width: 350px;
+    height: 450px;
+    border-radius: 50px;
+    margin-left: 10px;
+    border: 2px solid rgb(255, 251, 0);
+    cursor: pointer;
+}
+/* Existing CSS */
+
+/* Media Queries for small screens */
+@media (max-width: 768px) {
+  .item {
+    width: 100%;
+  }
+
+  .item p {
+    margin: 6px 20px;
+    font-size: 16px;
+  }
+
+  .item-prices {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    margin-left: 20px;
+  }
+
+  .item-price-new {
+    font-size: 14px;
+    margin: 3px 0;
+  }
+
+  .item-price-old {
+    font-size: 14px;
+    margin: 3px 0;
+  }
+
+  .item img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 25px;
+    border: 2px solid rgb(255, 251, 0);
+  }
+}
+/* Existing CSS */
+
+/* Media Queries for small screens */
+@media (max-width: 768px) {
+    .item {
+      width: 100%;
+      /* Optional: Reduce the width of item container to fit smaller screens */
+      max-width: 300px;
+    }
+  
+    .item img {
+      width: 100%; /* Ensure images take up the full width of their container */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 20px; /* Reduce border-radius for better fit */
+      border: 2px solid rgb(255, 251, 0);
+    }
+  
+    .item p {
+      margin: 6px 10px; /* Adjust margin for smaller screens */
+      font-size: 14px; /* Reduce font size for better readability */
+    }
+  
+    .item-prices {
+      flex-direction: column; /* Stack prices vertically */
+      gap: 5px; /* Reduce gap between prices */
+      align-items: flex-start;
+      margin-left: 10px; /* Adjust margin for better alignment */
+    }
+  
+    .item-price-new, .item-price-old {
+      font-size: 12px; /* Reduce font size for better fit */
+      margin: 3px 0; /* Adjust margin for spacing */
+    }
+  }
+  

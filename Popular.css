@@ -1,0 +1,55 @@
+.popular{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 90vh;
+    background: black;
+    margin-top: px;
+}
+.popular h1{
+    color: #ffdd00;
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 80px;
+}
+.popular hr{
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+.popular-item{
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    
+}
+/* Existing CSS */
+
+/* Media Queries for small screens */
+@media (max-width: 768px) {
+    .popular {
+      height: auto; /* Adjust height for better fit */
+      /* padding: 20px; */
+      margin-top: -74px;
+    }
+  
+    .popular h1 {
+      font-size: 30px;
+      margin-top: 40px;
+    }
+  
+    .popular hr {
+      width: 150px;
+      height: 4px;
+    }
+  
+    .popular-item {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-top: 30px;
+    }
+  }
+  
