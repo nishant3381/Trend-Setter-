@@ -1,0 +1,137 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+.footer-logo p{
+    margin-top: -25px;
+    margin-left: -15px;
+    font-size: 36px;
+    font-weight: 800;
+    color: rgb(255, 208, 0);
+}
+.footer-logo p1{
+    margin-top: 30px;
+    margin-left: -155px;
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+}
+.footer-links{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+.footer-links li{
+    cursor: pointer;
+}
+.footer-social-icons{
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+.footer-icons-container{
+    padding: 10px;
+    padding-bottom: 6px;
+    background: white;
+    border: 1px solid #f3d700;
+    border-radius: 50%;
+}
+.footer-logo img{
+    width: 150px;
+    height: 150px;
+}
+.footer-copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+    color: black;
+    font-size: 15px;
+    margin-top: -20px;
+}
+.footer-copyright hr{
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    height: 3px;
+    background: white;
+}
+/* Existing CSS */
+
+/* Media Queries for small screens */
+@media (max-width: 768px) {
+    .footer {
+      gap: 30px;
+      margin-top: 20px;
+      padding: 20px;
+    }
+  
+    .footer-logo {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .footer-logo p {
+      margin-top: 0;
+      margin-left: 0;
+      font-size: 18px;
+    }
+  
+    .footer-logo p1 {
+      margin-top: 0;
+      margin-left: 0;
+      font-size: 22px;
+    }
+  
+    .footer-links {
+      flex-direction: row;
+      gap: 8px;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-links li {
+      font-size: 12px;
+    }
+  
+    .footer-social-icons {
+      justify-content: center;
+    }
+  
+    .footer-icons-container {
+      padding: 8px;
+    }
+  
+    .footer-logo img {
+      width: 70px;
+      height: 70px;
+    }
+  
+    .footer-copyright {
+      gap: 10px;
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-size: 10px;
+    }
+  
+    .footer-copyright hr {
+      width: 100%;
+      height: 2px;
+    }
+  }
+  
